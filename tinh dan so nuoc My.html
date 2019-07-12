@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dan so nuco my</title>
+</head>
+<body>
+<script>
+    let zipcode = "04647-2350";
+    console.log(is_usZipCode(zipcode));
+    zipcode = "7930";
+    console.log(is_usZipCode(zipcode));
+
+    function is_usZipCode(str) {
+        let reprxp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (reprxp.test(str)) {
+            return true;
+        } else
+            return false;
+    }
+</script>
+
+</body>
+</html>
